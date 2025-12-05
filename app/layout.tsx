@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: "JohnKarl - Full Stack Developer",
+  title: "JohnKarl - Web Portfolio",
   description: "Portfolio of JohnKarl, a passionate full stack developer creating elegant solutions to complex problems.",
   icons: {
     icon: "/images/NoBgProfileImageMe.png",

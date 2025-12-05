@@ -20,7 +20,7 @@ export function HeroSection() {
 
           <div className="space-y-6 text-center lg:text-left">
             <p className="text-primary font-medium">Hello, I&apos;m</p>
-            <h1 className="text-5xl md:text-7xl font-bold text-foreground leading-tight text-balance">JohnKarl</h1>
+            <h1 className="text-5xl md:text-7xl font-bold text-foreground leading-tight text-balance">John Karl Gadiane</h1>
             <h2 className="text-2xl md:text-3xl text-muted-foreground font-light">Full Stack Developer</h2>
             <p className="text-muted-foreground leading-relaxed max-w-lg mx-auto lg:mx-0">
               I build accessible, digital experiences for the web. like connecting puzzle pieces to create a beautiful image.

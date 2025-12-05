@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { Menu, X } from "lucide-react"
 
 const navLinks = [
@@ -13,6 +13,29 @@ const navLinks = [
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
+  const [activeSection, setActiveSection] = useState("")
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveSection(entry.target.id)
+          }
+        })
+      },
+      {
+        rootMargin: "-50% 0px -50% 0px", // Trigger when section is in the middle of the viewport
+      },
+    )
+
+    const sections = document.querySelectorAll("section[id]")
+    sections.forEach((section) => observer.observe(section))
+
+    return () => {
+      sections.forEach((section) => observer.unobserve(section))
+    }
+  }, [])
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
@@ -28,7 +51,10 @@ export function Navbar() {
               <a
                 key={link.href}
                 href={link.href}
-                className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                className={`text-sm transition-colors ${activeSection === link.href.substring(1)
+                    ? "text-primary font-medium"
+                    : "text-muted-foreground hover:text-primary"
+                  }`}
               >
                 {link.label}
               </a>
@@ -48,7 +74,10 @@ export function Navbar() {
               <a
                 key={link.href}
                 href={link.href}
-                className="block py-2 text-muted-foreground hover:text-primary transition-colors"
+                className={`block py-2 transition-colors ${activeSection === link.href.substring(1)
+                    ? "text-primary font-medium"
+                    : "text-muted-foreground hover:text-primary"
+                  }`}
                 onClick={() => setIsOpen(false)}
               >
                 {link.label}
