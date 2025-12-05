@@ -9,7 +9,7 @@ A modern, minimalistic portfolio website built with Next.js 16, React 19, TypeSc
 - 🎨 **Modern UI** - Clean, minimalistic design with smooth animations
 - ⚡ **Fast Performance** - Built with Next.js 16 App Router
 - 🎯 **Type Safe** - Full TypeScript support
-- 🎭 **Custom Animations** - Infinite logo marquee and smooth carousel transitions
+- 🎭 **Custom Animations** - Infinite logo marquee, smooth carousel transitions, and scroll-triggered pop-in effects
 
 ## 🚀 Tech Stack
 
@@ -17,6 +17,7 @@ A modern, minimalistic portfolio website built with Next.js 16, React 19, TypeSc
 - **Language:** TypeScript
 - **Styling:** Tailwind CSS v4
 - **UI Components:** shadcn/ui, Lucide React, react-icons
+- **Animations:** Framer Motion
 - **Fonts:** Geist Sans & Geist Mono
 
 ## 📦 Installation
@@ -57,7 +58,10 @@ JohnKarl-Portfolio/
 │   ├── projects-section.tsx    # Projects carousel
 │   ├── achievements-section.tsx # Achievements carousel
 │   ├── contact-section.tsx     # Contact form
-│   └── footer.tsx          # Footer
+│   ├── contact-section.tsx     # Contact form
+│   ├── footer.tsx          # Footer
+│   └── ui/
+│       └── scroll-animation.tsx # Reusable scroll animation component
 ├── lib/
 │   └── utils.ts            # Utility functions
 ├── public/                 # Static assets
@@ -66,29 +70,6 @@ JohnKarl-Portfolio/
 ├── postcss.config.mjs
 └── next.config.ts
 ```
-
-## 🎨 Customization
-
-### Update Personal Information
-
-1. **Hero Section** (`components/hero-section.tsx`):
-   - Update name, title, and description
-   - Replace social media links
-
-2. **About Section** (`components/about-section.tsx`):
-   - Update stats (years of experience, projects, clients)
-   - Update description text
-
-3. **Skills Section** (`components/skills-section.tsx`):
-   - Modify skill categories and technologies
-
-4. **Projects Section** (`components/projects-section.tsx`):
-   - Add/update project details
-   - Replace demo links and GitHub URLs
-
-5. **Contact Section** (`components/contact-section.tsx`):
-   - Update email, phone, and location
-   - Customize form submission logic
 
 ### Theme Colors
 
@@ -100,10 +81,6 @@ Modify color variables in `app/globals.css`:
   /* ... other colors */
 }
 ```
-
-## 📝 License
-
-This project is open source and available under the MIT License.
 
 ## 🤝 Contributing
 
