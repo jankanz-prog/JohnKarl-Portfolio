@@ -78,9 +78,14 @@ export function SkillsSection() {
           </div>
         </ScrollAnimation>
 
-        <div className="grid md:grid-cols-3 gap-6 mb-16">
+        <div className="flex overflow-x-auto snap-x snap-mandatory pb-6 -mx-6 px-6 gap-4 md:grid md:grid-cols-3 md:gap-6 md:pb-0 md:mx-0 md:px-0 mb-16 scrollbar-none">
           {skillCategories.map((category, index) => (
-            <ScrollAnimation key={category.title} delay={index * 0.1} variant="fadeUp">
+            <ScrollAnimation
+              key={category.title}
+              delay={index * 0.1}
+              variant="fadeUp"
+              className="min-w-[85vw] snap-center md:min-w-0"
+            >
               <div className="p-6 bg-card rounded-xl border border-border hover:border-primary/50 transition-colors h-full">
                 <div className="flex items-center gap-3 mb-6">
                   <div className="p-2 bg-primary/10 rounded-lg">
