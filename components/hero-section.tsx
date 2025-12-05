@@ -23,8 +23,7 @@ export function HeroSection() {
             <h1 className="text-5xl md:text-7xl font-bold text-foreground leading-tight text-balance">JohnKarl</h1>
             <h2 className="text-2xl md:text-3xl text-muted-foreground font-light">Full Stack Developer</h2>
             <p className="text-muted-foreground leading-relaxed max-w-lg mx-auto lg:mx-0">
-              I build accessible, pixel-perfect digital experiences for the web. Passionate about creating elegant
-              solutions to complex problems.
+              I build accessible, digital experiences for the web. like connecting puzzle pieces to create a beautiful image.
             </p>
 
             <div className="flex items-center justify-center lg:justify-start gap-4 pt-4">
@@ -44,7 +43,7 @@ export function HeroSection() {
 
             <div className="flex items-center justify-center lg:justify-start gap-6 pt-6">
               <a
-                href="https://github.com"
+                href="https://github.com/jankanz-prog"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors"
@@ -62,7 +61,7 @@ export function HeroSection() {
                 <Linkedin size={22} />
               </a>
               <a
-                href="mailto:hello@example.com"
+                href="mailto:jkpgadiane@gmail.com"
                 className="text-muted-foreground hover:text-primary transition-colors"
                 aria-label="Email"
               >

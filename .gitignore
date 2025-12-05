@@ -36,3 +36,4 @@ yarn-error.log*
 next-env.d.ts
 
 /Sample UI
+.agent/workflows/deploy_to_vercel.md

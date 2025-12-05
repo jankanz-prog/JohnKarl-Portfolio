@@ -16,7 +16,7 @@ export function Footer() {
 
           <div className="flex items-center gap-4">
             <a
-              href="https://github.com"
+              href="https://github.com/jankanz-prog"
               target="_blank"
               rel="noopener noreferrer"
               className="w-10 h-10 rounded-full border border-border flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary transition-colors"
@@ -34,7 +34,7 @@ export function Footer() {
               <Linkedin size={18} />
             </a>
             <a
-              href="mailto:hello@example.com"
+              href="mailto:jkpgadiane@gmail.com"
               className="w-10 h-10 rounded-full border border-border flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary transition-colors"
               aria-label="Email"
             >
